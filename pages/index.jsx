@@ -33,6 +33,10 @@ function Home() {
         <meta property="og:url" content="https://www.absolutesolutions.be/" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, archive" />
+        <meta
+          name="google-site-verification"
+          content="9ZktPPedo01mWXN8XvjIGf9u5x2KdzxyUr8BTvgI80I"
+        />
       </Head>
       <main className="mt-24 home w-full selection:bg-cyan-600 selection:text-white flex justify-center px-4 items-start flex-col text-white">
         <h2
