@@ -12,7 +12,7 @@ import {
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import { collection, addDoc } from 'firebase/firestore';
-import { db } from './_firebase';
+import { db } from '../_firebase';
 import Head from 'next/head';
 
 function Contact() {
