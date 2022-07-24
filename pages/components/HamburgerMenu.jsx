@@ -44,15 +44,15 @@ function HamburgerButton(props) {
         <motion.div
           initial={false}
           animate={menu ? 'show' : 'hide'}
-          className="w-60 h-3/4 flex items-center flex-col justify-center text-zinc-600 font-medium"
+          className="w-60 h-3/4 space-y-2 flex items-center flex-col justify-center text-zinc-600 font-medium"
           variants={{
             show: {
               transform: 'translateX(0)',
               opacity: 1,
-              transition: { delay: 0.6, duration: 0.2 },
+              transition: { delay: 0.6, duration: 0.1 },
             },
             hide: {
-              transition: { delay: 0.3, duration: 0.2 },
+              transition: { delay: 0.3, duration: 0.1 },
               opacity: 0,
             },
           }}

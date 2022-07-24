@@ -13,6 +13,7 @@ import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from './firebase';
+import Head from 'next/head';
 
 function Contact() {
   const [loading, setLoading] = useState(false);
@@ -65,6 +66,20 @@ function Contact() {
   return (
     <div className="overflow-x-hidden">
       <Header />
+      <Head>
+        <title>Contact absolutions</title>
+        <meta
+          name="description"
+          content="Heb je vragen over één van onze diensten? Stuur ons gerust een mailtje via onderstaand formulier. We zijn ook telefonisch bereikbaar op +32 479 65 96 39."
+        />
+        <meta property="og:title" content="Contacteer ons!" />
+        <meta
+          property="og:description"
+          content="Heb je vragen over één van onze diensten? Stuur ons gerust een mailtje via onderstaand formulier. We zijn ook telefonisch bereikbaar op +32 479 65 96 39."
+        />
+        <meta property="og:url" content="https://www.absolutesolutions.be/" />
+        <meta property="og:type" content="website" />
+      </Head>
       <section className="w-screen md:w-7/12 lg:w-5/12 xl:w-1/3 2xl:w-1/3 mx-auto px-6 mt-36 mb-12 selection:bg-cyan-600 selection:text-white">
         <h3 className="text-slate-700 font-semibold text-3xl">
           Contacteer ons

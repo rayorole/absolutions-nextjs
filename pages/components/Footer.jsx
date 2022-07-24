@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
+/* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { MenuIcon } from '@heroicons/react/outline';

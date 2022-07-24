@@ -35,7 +35,7 @@ function Faq() {
       </div>
 
       {faqs.map((faq) => (
-        <div className="p-2 border-t border-t-neutral-200">
+        <div key={faq.id} className="p-2 border-t border-t-neutral-200">
           <div className="flex items-center justify-between">
             <h2 className="font-semibold text-stone-800 text-sm">{faq.name}</h2>
             <button

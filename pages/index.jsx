@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-html-link-for-pages */
 import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -6,6 +8,7 @@ import DidYouKnow from './components/DidYouKnow';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import Aos from 'aos';
+import Head from 'next/dist/shared/lib/head';
 import 'aos/dist/aos.css';
 
 function Home() {
@@ -16,6 +19,21 @@ function Home() {
   return (
     <div className="overflow-x-hidden">
       <Header />
+      <Head>
+        <title>Contact absolutions</title>
+        <meta
+          name="description"
+          content="AB Solutions bouwt en onderhoudt uw zwembad met de grootste zorg. U hoeft enkel te genieten."
+        />
+        <meta property="og:title" content="AB Solutions" />
+        <meta
+          property="og:description"
+          content="AB Solutions bouwt en onderhoudt uw zwembad met de grootste zorg. U hoeft enkel te genieten."
+        />
+        <meta property="og:url" content="https://www.absolutesolutions.be/" />
+        <meta property="og:type" content="website" />
+        <meta name="robots" content="index, archive" />
+      </Head>
       <main className="mt-24 home w-full selection:bg-cyan-600 selection:text-white flex justify-center px-4 items-start flex-col text-white">
         <h2
           data-aos="fade-zoom-in"

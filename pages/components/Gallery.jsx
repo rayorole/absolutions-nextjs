@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect } from 'react';
 
 import Aos from 'aos';
@@ -10,7 +11,7 @@ function Gallery() {
 
   return (
     <div className="bg-zinc-50 text-center py-12 px-4 text-neutral-700 border-b border-b-zinc-100">
-      <div class="grid gap-4 grid-cols-2 grid-rows-4">
+      <div className="grid gap-4 grid-cols-2 grid-rows-4">
         <div
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-sine"

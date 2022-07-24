@@ -8,6 +8,7 @@ import About from './components/About';
 import Faq from './components/Faq';
 import Gallery from './components/Gallery';
 import { CheckIcon, MailIcon, PhoneIcon } from '@heroicons/react/outline';
+import Head from 'next/dist/shared/lib/head';
 import Aos from 'aos';
 
 function Home() {
@@ -47,6 +48,20 @@ function Home() {
   return (
     <div className="overflow-x-hidden selection:bg-cyan-600 selection:text-white">
       <Header />
+      <Head>
+        <title>Contact absolutions</title>
+        <meta
+          name="description"
+          content="Wilt u een HDPE-zwembad kopen? Dan moet u zeker eens kijken wat ons bedrijf voor u kan betekenen. Neem vandaag nog contact met ons op bij interesse."
+        />
+        <meta property="og:title" content="HDPE zwembaden - AB Solutions" />
+        <meta
+          property="og:description"
+          content="Wilt u een HDPE-zwembad kopen? Dan moet u zeker eens kijken wat ons bedrijf voor u kan betekenen. Neem vandaag nog contact met ons op bij interesse."
+        />
+        <meta property="og:url" content="https://www.absolutesolutions.be/" />
+        <meta property="og:type" content="website" />
+      </Head>
       <div className="py-12 mt-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
