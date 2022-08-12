@@ -19,6 +19,11 @@ function Services() {
   useEffect(() => {
     Aos.init({ duration: 700, offset: 15 });
   }, []);
+
+  const Redirect = () => {
+    window.location.replace('/contact');
+  };
+
   return (
     <>
       <section className="bg-zinc-50 text-center py-10 px-4 text-neutral-700 border-b border-b-zinc-100">
@@ -35,7 +40,10 @@ function Services() {
             data-aos="fade-left"
             className="bg-neutral-100 py-3 px-2 border border-neutral-200 rounded-lg h-fit"
           >
-            <div className="flex items-center justify-between">
+            <div
+              onClick={() => setNBOpen(!NBopen)}
+              className="flex items-center justify-between"
+            >
               <div className="flex items-center h-min">
                 <div className="flex items-center justify-center h-12 w-12 rounded-md bg-cyan-700 text-white mr-4">
                   <ColorSwatchIcon
@@ -49,10 +57,7 @@ function Services() {
                   </h3>
                 </div>
               </div>
-              <button
-                onClick={() => setNBOpen(!NBopen)}
-                className="p-2 rounded-full transition ease-in"
-              >
+              <button className="p-2 rounded-full transition ease-in">
                 <ChevronDownIcon
                   className={
                     NBopen
@@ -75,7 +80,10 @@ function Services() {
                 werken we een plan om maat uit en beheren we het volledige
                 proces tot en met oplevering.
               </p>
-              <button className="py-2 px-4 mt-3 bg-cyan-700 rounded-md flex items-center text-white text-xs font-semibold">
+              <button
+                onClick={Redirect}
+                className="py-2 px-4 mt-3 bg-cyan-700 rounded-md flex items-center text-white text-xs font-semibold"
+              >
                 Vraag een offerte
                 <NewspaperIcon className="w-4 h-4 ml-2" />
               </button>
@@ -85,7 +93,10 @@ function Services() {
             data-aos="fade-left"
             className="bg-neutral-100 py-3 px-2 border border-neutral-200 rounded-lg h-min"
           >
-            <div className="flex items-center justify-between">
+            <div
+              onClick={() => setROpen(!Ropen)}
+              className="flex items-center justify-between"
+            >
               <div className="flex items-center">
                 <div className="flex items-center justify-center h-12 w-12 rounded-md bg-cyan-700 text-white mr-4">
                   <RefreshIcon
@@ -99,10 +110,7 @@ function Services() {
                   </h3>
                 </div>
               </div>
-              <button
-                onClick={() => setROpen(!Ropen)}
-                className="p-2 rounded-full transition ease-in"
-              >
+              <button className="p-2 rounded-full transition ease-in">
                 <ChevronDownIcon
                   className={
                     Ropen
@@ -126,7 +134,10 @@ function Services() {
                 zwembadtechnieken, Roldeck®, andere afdekkingen of nieuw
                 leidingwerk.
               </p>
-              <button className="py-2 px-4 mt-3 bg-cyan-700 rounded-md flex items-center text-white text-xs font-semibold">
+              <button
+                onClick={Redirect}
+                className="py-2 px-4 mt-3 bg-cyan-700 rounded-md flex items-center text-white text-xs font-semibold"
+              >
                 Vraag een offerte
                 <NewspaperIcon className="w-4 h-4 ml-2" />
               </button>
@@ -136,7 +147,10 @@ function Services() {
             data-aos="fade-left"
             className="bg-neutral-100 py-3 px-2 border border-neutral-200 rounded-lg h-fit"
           >
-            <div className="flex items-center justify-between">
+            <div
+              onClick={() => setHOpen(!Hopen)}
+              className="flex items-center justify-between"
+            >
               <div className="flex items-center h-min">
                 <div className="flex items-center justify-center h-12 w-12 rounded-md bg-cyan-700 text-white mr-4">
                   <CogIcon className="w-6 h-6 text-white" aria-hidden="true" />
@@ -147,10 +161,7 @@ function Services() {
                   </h3>
                 </div>
               </div>
-              <button
-                onClick={() => setHOpen(!Hopen)}
-                className="p-2 rounded-full transition ease-in"
-              >
+              <button className="p-2 rounded-full transition ease-in">
                 <ChevronDownIcon
                   className={
                     Hopen
@@ -173,7 +184,10 @@ function Services() {
                 herstelling van het originele stuk niet mogelijk? Dan bespreken
                 we met u de mogelijkheden.
               </p>
-              <button className="py-2 px-4 mt-3 bg-cyan-700 rounded-md flex items-center text-white text-xs font-semibold">
+              <button
+                onClick={Redirect}
+                className="py-2 px-4 mt-3 bg-cyan-700 rounded-md flex items-center text-white text-xs font-semibold"
+              >
                 Vraag een offerte
                 <NewspaperIcon className="w-4 h-4 ml-2" />
               </button>
@@ -183,7 +197,10 @@ function Services() {
             data-aos="fade-left"
             className="bg-neutral-100 py-3 px-2 border border-neutral-200 rounded-lg h-fit"
           >
-            <div className="flex items-center justify-between">
+            <div
+              onClick={() => setOOpen(!Oopen)}
+              className="flex items-center justify-between"
+            >
               <div className="flex items-center h-min">
                 <div className="flex items-center justify-center h-12 w-12 rounded-md bg-cyan-700 text-white mr-4">
                   <ViewBoardsIcon
@@ -197,10 +214,7 @@ function Services() {
                   </h3>
                 </div>
               </div>
-              <button
-                onClick={() => setOOpen(!Oopen)}
-                className="p-2 rounded-full transition ease-in"
-              >
+              <button className="p-2 rounded-full transition ease-in">
                 <ChevronDownIcon
                   className={
                     Oopen
@@ -224,7 +238,10 @@ function Services() {
                 waterkwaliteit in perfecte staat zodat u zorgeloos kan genieten
                 van het zwemmen.
               </p>
-              <button className="py-2 px-4 mt-3 bg-cyan-700 rounded-md flex items-center text-white text-xs font-semibold">
+              <button
+                onClick={Redirect}
+                className="py-2 px-4 mt-3 bg-cyan-700 rounded-md flex items-center text-white text-xs font-semibold"
+              >
                 Vraag een offerte
                 <NewspaperIcon className="w-4 h-4 ml-2" />
               </button>

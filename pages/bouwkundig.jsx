@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-html-link-for-pages */
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -82,12 +84,12 @@ export default function Bouwkundig() {
                   overloopzwembad aan zeer concurrentiële prijzen.
                 </p>
 
-                <Link
+                <a
                   className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-cyan-600 border border-cyan-600 rounded active:text-cyan-500 hover:bg-transparent hover:text-cyan-600 focus:outline-none focus:ring"
-                  to="/contact"
+                  href="/contact"
                 >
                   Een vraag?
-                </Link>
+                </a>
               </div>
             </div>
           </div>
