@@ -68,6 +68,11 @@ function Contact() {
       <Header />
       <Head>
         <title>Contact absolutions</title>
+        <link
+          rel="shortcut icon"
+          href="/assets/images/absolutions.png"
+          type="image/x-icon"
+        />
         <meta
           name="description"
           content="Heb je vragen over één van onze diensten? Stuur ons gerust een mailtje via onderstaand formulier. We zijn ook telefonisch bereikbaar op +32 479 65 96 39."

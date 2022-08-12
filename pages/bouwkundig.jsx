@@ -1,0 +1,127 @@
+import React from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Head from 'next/head';
+
+import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
+
+export default function Bouwkundig() {
+  return (
+    <div className="overflow-x-hidden">
+      <Header />
+      <Head>
+        <title>Bouwkundige zwembaden | absolutions</title>
+        <link
+          rel="shortcut icon"
+          href="/assets/images/absolutions.png"
+          type="image/x-icon"
+        />
+        <meta
+          name="description"
+          content="Heb je vragen over één van onze diensten? Stuur ons gerust een mailtje via onderstaand formulier. We zijn ook telefonisch bereikbaar op +32 479 65 96 39."
+        />
+        <meta property="og:title" content="Contacteer ons!" />
+        <meta
+          property="og:description"
+          content="Heb je vragen over één van onze diensten? Stuur ons gerust een mailtje via onderstaand formulier. We zijn ook telefonisch bereikbaar op +32 479 65 96 39."
+        />
+        <meta property="og:url" content="https://www.absolutesolutions.be/" />
+        <meta property="og:type" content="website" />
+      </Head>
+      <section class="relative bg-white">
+        <img
+          class="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-25 sm:opacity-100"
+          src="/assets/images/bouwkundig.jpeg"
+          alt="Bouwkundig zwembad"
+        />
+
+        <div class="hidden sm:block sm:inset-0 sm:absolute sm:bg-gradient-to-r sm:from-white sm:to-transparent"></div>
+
+        <div class="relative max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
+          <div class="max-w-xl text-center sm:text-left">
+            <h1 class="text-3xl font-extrabold sm:text-5xl">
+              <strong class="font-extrabold text-cyan-700 sm:block">
+                Bouwkundige{' '}
+              </strong>
+              zwembaden
+            </h1>
+
+            <p class="max-w-lg mt-4 sm:leading-relaxed sm:text-xl">
+              Tradionele skimmerbaden. Of heb je liever een onder- of
+              overloop-zwembad?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
+            <div class="relative z-10 lg:py-16">
+              <div class="relative h-64 sm:h-80 lg:h-full">
+                <img
+                  class="absolute inset-0 object-cover w-full h-full"
+                  src="/assets/images/night-pool.png"
+                  alt="Indoors house"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex items-center bg-gray-100">
+              <span class="hidden lg:inset-y-0 lg:absolute lg:w-16 lg:bg-gray-100 lg:block lg:-left-16"></span>
+
+              <div class="p-8 sm:p-16 lg:p-24">
+                <h2 class="text-2xl font-bold sm:text-3xl">
+                  Wat is een bouwkundig zwembad?
+                </h2>
+
+                <p class="mt-4 text-gray-600">
+                  Onze bouwkundige zwembaden worden gebouwd volledig op uw maat.
+                  Wij bouwen traditionele skimmerbaden met oog voor detail en
+                  totaalconcept met net dat ietsje meer. Of liever een onder- of
+                  overloopzwembad aan zeer concurrentiële prijzen.
+                </p>
+
+                <a
+                  class="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-cyan-600 border border-cyan-600 rounded active:text-cyan-500 hover:bg-transparent hover:text-cyan-600 focus:outline-none focus:ring"
+                  href="/contact"
+                >
+                  Een vraag?
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="py-12 px-8 bg-neutral-50 border border-t-neutral-100 md:flex md:justify-between items-center">
+        <div>
+          <h2 className="text-base text-cyan-700 font-bold tracking-wide">
+            Aarzel ons niet te contacteren
+          </h2>
+          <p className="text-neutral-600 font-semibold text-xs">
+            Wij luisteren naar iedere klant en streven naar kwaliteit.
+          </p>
+        </div>
+        <div className="flex items-center space-x-2 my-4">
+          <a
+            type="submit"
+            href="mailto:vincent@absolutesolutions.be"
+            className="py-2 flex focus:outline-none focus:bg-cyan-800 hover:rotate-1 appearance-none justify-center w-32 bg-cyan-700 transition ease-in hover:bg-cyan-800 rounded-full text-white items-center text-md font-medium"
+          >
+            Mail
+            <MailIcon className="w-4 h-4 text-white ml-2" />
+          </a>
+          <a
+            type="submit"
+            href="tel:+32479659639"
+            className="py-2 hover:rotate-1 focus:outline-none focus:bg-neutral-600 flex appearance-none justify-center w-32 bg-neutral-500 transition ease-in hover:bg-neutral-600 rounded-full text-white items-center text-md font-medium"
+          >
+            Bel
+            <PhoneIcon className="w-4 h-4 text-white ml-2" />
+          </a>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}

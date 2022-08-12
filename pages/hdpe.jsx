@@ -49,7 +49,12 @@ function Home() {
     <div className="overflow-x-hidden selection:bg-cyan-600 selection:text-white">
       <Header />
       <Head>
-        <title>Contact absolutions</title>
+        <link
+          rel="shortcut icon"
+          href="/assets/images/absolutions.png"
+          type="image/x-icon"
+        />
+        <title>HDPE Zwembaden | absolutions</title>
         <meta
           name="description"
           content="Wilt u een HDPE-zwembad kopen? Dan moet u zeker eens kijken wat ons bedrijf voor u kan betekenen. Neem vandaag nog contact met ons op bij interesse."
