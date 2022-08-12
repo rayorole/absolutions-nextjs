@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Head from 'next/head';
 
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
+import Link from 'next/link';
 
 export default function Bouwkundig() {
   return (
@@ -81,12 +82,12 @@ export default function Bouwkundig() {
                   overloopzwembad aan zeer concurrentiële prijzen.
                 </p>
 
-                <a
+                <Link
                   className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-cyan-600 border border-cyan-600 rounded active:text-cyan-500 hover:bg-transparent hover:text-cyan-600 focus:outline-none focus:ring"
-                  href="/contact"
+                  to="/contact"
                 >
                   Een vraag?
-                </a>
+                </Link>
               </div>
             </div>
           </div>
