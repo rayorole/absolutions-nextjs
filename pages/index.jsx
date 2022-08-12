@@ -69,7 +69,7 @@ function Home() {
               data-aos-duration="600"
               href="/hdpe"
             >
-              <span class="text-sm font-medium">Bekijk onze zwembaden</span>
+              <span className="text-sm font-medium">Bekijk onze zwembaden</span>
 
               <svg
                 className="w-5 h-5 ml-3"
@@ -79,9 +79,9 @@ function Home() {
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M17 8l4 4m0 0l-4 4m4-4H3"
                 />
               </svg>
