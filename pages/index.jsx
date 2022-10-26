@@ -18,12 +18,6 @@ function Home() {
 
   return (
     <div className="overflow-x-hidden">
-      <aside className="fixed z-50 flex items-center justify-center px-5 py-3 text-white bg-black rounded-lg bottom-2 right-2">
-        <p className="text-sm font-medium hover:opacity-75">
-          Under development &copy; Ray Orolé 🚀
-        </p>
-      </aside>
-
       <Header />
       <Head>
         <title>AB Solutions zwembaden</title>
