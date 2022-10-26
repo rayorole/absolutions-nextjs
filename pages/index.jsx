@@ -44,48 +44,52 @@ function Home() {
         />
       </Head>
       <div className="">
-        <main className="mt-24 home w-full selection:bg-cyan-600 selection:text-white flex justify-center px-4 items-start flex-col text-white">
-          <h2
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="600"
-            className="text-3xl font-semibold w-96 sm:w-fit md:w-[600px]"
-          >
-            AB Solutions bouwt en onderhoudt uw zwembad met de grootste zorg.
-          </h2>
-          <h3
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="600"
-            className="text-lg"
-          >
-            U hoeft enkel te genieten
-          </h3>
-          <div className="mt-12">
-            <a
-              className="inline-flex items-center px-6 py-3 mt-8 bg-white border border-white rounded hover:bg-transparent hover:text-white text-gray-600 focus:outline-none focus:ring-none"
-              data-aos="fade-right"
+        <main className="mt-24 px-4 home w-full selection:bg-cyan-600 selection:text-white flex justify-center items-start flex-col text-white">
+          <div className="lg:w-8/12 lg:mx-auto lg:text-left">
+            <h2
+              data-aos="fade-zoom-in"
               data-aos-easing="ease-in-sine"
               data-aos-duration="600"
-              href="/hdpe"
+              className="text-3xl font-semibold w-96 sm:w-fit md:w-[600px]"
             >
-              <span className="text-sm font-medium">Bekijk onze zwembaden</span>
-
-              <svg
-                className="w-5 h-5 ml-3"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+              AB Solutions bouwt en onderhoudt uw zwembad met de grootste zorg.
+            </h2>
+            <h3
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="600"
+              className="text-lg"
+            >
+              U hoeft enkel te genieten
+            </h3>
+            <div className="mt-12">
+              <a
+                className="inline-flex items-center px-6 py-3 mt-8 bg-white border border-white rounded hover:bg-transparent hover:text-white text-gray-600 focus:outline-none focus:ring-none"
+                data-aos="fade-right"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600"
+                href="/hdpe"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </a>
+                <span className="text-sm font-medium">
+                  Bekijk onze zwembaden
+                </span>
+
+                <svg
+                  className="w-5 h-5 ml-3"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </main>
 

@@ -28,36 +28,40 @@ function Faq() {
 
   return (
     <section className="text-center py-10 px-4 sm:px-6 md:px-9 text-neutral-700 border-b border-b-zinc-100 selection:bg-cyan-600 selection:text-white">
-      <div className="lg:text-center my-4">
-        <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
-          Veelgestelde vragen
-        </h3>
-      </div>
-
-      {faqs.map((faq) => (
-        <div key={faq.id} className="p-2 border-t border-t-neutral-200">
-          <div className="flex items-center justify-between">
-            <h2 className="font-semibold text-stone-800 text-sm">{faq.name}</h2>
-            <button
-              onClick={() => changeFaq(faq.id)}
-              className="hover:bg-neutral-200 rounded-full p-3"
-            >
-              <ChevronDownIcon
-                className={faqU == faq.id ? 'h-5 w-5 rotate-180' : 'h-5 w-5'}
-              />
-            </button>
-          </div>
-          <div
-            className={
-              faqU == faq.id
-                ? 'text-left text-sm text-stone-500 font-semibold'
-                : 'hidden'
-            }
-          >
-            {faq.description}
-          </div>
+      <div className="mx-auto max-w-screen-2xl">
+        <div className="lg:text-center my-4">
+          <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
+            Veelgestelde vragen
+          </h3>
         </div>
-      ))}
+
+        {faqs.map((faq) => (
+          <div key={faq.id} className="p-2 border-t border-t-neutral-200">
+            <div className="flex items-center justify-between">
+              <h2 className="font-semibold text-stone-800 text-sm">
+                {faq.name}
+              </h2>
+              <button
+                onClick={() => changeFaq(faq.id)}
+                className="hover:bg-neutral-200 rounded-full p-3"
+              >
+                <ChevronDownIcon
+                  className={faqU == faq.id ? 'h-5 w-5 rotate-180' : 'h-5 w-5'}
+                />
+              </button>
+            </div>
+            <div
+              className={
+                faqU == faq.id
+                  ? 'text-left text-sm text-stone-500 font-semibold w-3/4'
+                  : 'hidden'
+              }
+            >
+              {faq.description}
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

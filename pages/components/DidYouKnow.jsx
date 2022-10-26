@@ -1,6 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-html-link-for-pages */
+
 function DidYouKnow() {
   return (
-    <div className="relative">
+    <div className="relative lg:hidden">
       <h2 className="text-center mt-10 text-stone-400 font-semibold text-xs">
         &laquo; Sleep om kaart te veranderen &raquo;
       </h2>
