@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-/* eslint-disable @next/next/no-html-link-for-pages */
 import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -9,6 +8,7 @@ import About from './components/About';
 import Gallery from './components/Gallery';
 import Aos from 'aos';
 import Head from 'next/dist/shared/lib/head';
+import Link from 'next/link';
 import 'aos/dist/aos.css';
 
 function Home() {
@@ -63,32 +63,33 @@ function Home() {
               U hoeft enkel te genieten
             </h3>
             <div className="mt-12">
-              <a
-                className="inline-flex items-center px-6 py-3 mt-8 bg-white border border-white rounded hover:bg-transparent hover:text-white text-gray-600 focus:outline-none focus:ring-none"
-                data-aos="fade-right"
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="600"
-                href="/hdpe"
-              >
-                <span className="text-sm font-medium">
-                  Bekijk onze zwembaden
-                </span>
-
-                <svg
-                  className="w-5 h-5 ml-3"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+              <Link href="/hdpe">
+                <a
+                  className="inline-flex items-center px-6 py-3 mt-8 bg-white border border-white rounded hover:bg-transparent hover:text-white text-gray-600 focus:outline-none focus:ring-none"
+                  data-aos="fade-right"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="600"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </a>
+                  <span className="text-sm font-medium">
+                    Bekijk onze zwembaden
+                  </span>
+
+                  <svg
+                    className="w-5 h-5 ml-3"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </a>
+              </Link>
             </div>
           </div>
         </main>

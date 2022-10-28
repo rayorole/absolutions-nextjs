@@ -1,8 +1,8 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { MenuIcon } from '@heroicons/react/outline';
+import Link from 'next/link';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -14,9 +14,15 @@ function Footer() {
   return (
     <>
       <footer className="bg-zinc-100 overflow-x-hidden border border-t-zinc-200 p-5 md:px-8 lg:px-12 flex items-center justify-between w-screen selection:bg-cyan-600 selection:text-white">
-        <a href="/" className="hidden">
-          <img src="/assets/images/absolutions.png" alt="AB" className="w-24" />
-        </a>
+        <Link href="/">
+          <a className="hidden">
+            <img
+              src="/assets/images/absolutions.png"
+              alt="AB"
+              className="w-24"
+            />
+          </a>
+        </Link>
         <div className="flex items-center">
           <div className="contact flex flex-col text-neutral-500 text-xs sm:text-sm font-semibold mr-8 sm:mr-20">
             <h3 className="text-lg text-neutral-700">Contact</h3>

@@ -35,8 +35,8 @@ function Faq() {
           </h3>
         </div>
 
-        {faqs.map((faq) => (
-          <div key={faq.id} className="p-2 border-t border-t-neutral-200">
+        {faqs.map((faq, index) => (
+          <div key={index} className="p-2 border-t border-t-neutral-200">
             <div className="flex items-center justify-between">
               <h2 className="font-semibold text-stone-800 text-sm">
                 {faq.name}

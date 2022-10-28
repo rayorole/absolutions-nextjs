@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
 import React from 'react';
+import Link from 'next/link';
 
 function About() {
   return (
@@ -17,12 +17,11 @@ function About() {
             hoofdzakelijk actief in de provincie Antwerpen.
           </p>
           <div className="flex items-center justify-center">
-            <a
-              href="/contact"
-              className="py-2 mt-5 focus:outline-none cursor-pointer flex justify-center w-40 bg-cyan-700 rounded-md text-white items-center text-md font-medium"
-            >
-              Neem contact op
-            </a>
+            <Link href="/contact">
+              <a className="py-2 mt-5 focus:outline-none cursor-pointer flex justify-center w-40 bg-cyan-700 rounded-md text-white items-center text-md font-medium">
+                Neem contact op
+              </a>
+            </Link>
           </div>
         </div>
       </div>
