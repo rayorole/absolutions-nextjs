@@ -66,6 +66,10 @@ function Home() {
         />
         <meta property="og:url" content="https://www.absolutesolutions.be/" />
         <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/rayorole/absolutions-nextjs/dev/public/assets/images/absolutions.png"
+        />
       </Head>
       <div className="py-12 mt-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -67,14 +67,14 @@ function Home() {
       <div className="">
         <main className="mt-24 px-4 home w-full selection:bg-cyan-600 selection:text-white flex justify-center items-start flex-col text-white">
           <div className="lg:w-8/12 lg:mx-auto lg:text-left">
-            <h2
+            <h1
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in-sine"
               data-aos-duration="600"
               className="text-3xl font-semibold w-96 sm:w-fit md:w-[600px]"
             >
               AB Solutions bouwt en onderhoudt uw zwembad met de grootste zorg.
-            </h2>
+            </h1>
             <h3
               data-aos="fade-zoom-in"
               data-aos-easing="ease-in-sine"

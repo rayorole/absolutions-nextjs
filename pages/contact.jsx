@@ -86,6 +86,10 @@ function Contact() {
         />
         <meta property="og:url" content="https://www.absolutesolutions.be/" />
         <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/rayorole/absolutions-nextjs/dev/public/assets/images/absolutions.png"
+        />
       </Head>
       <section className="w-screen md:w-7/12 lg:w-5/12 xl:w-1/3 2xl:w-1/3 mx-auto px-6 mt-36 mb-12 selection:bg-cyan-600 selection:text-white">
         <h3 className="text-slate-700 font-semibold text-3xl">

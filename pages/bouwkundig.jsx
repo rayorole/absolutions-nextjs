@@ -21,12 +21,16 @@ export default function Bouwkundig() {
         />
         <meta
           name="description"
-          content="Heb je vragen over één van onze diensten? Stuur ons gerust een mailtje via onderstaand formulier. We zijn ook telefonisch bereikbaar op +32 479 65 96 39."
+          content="Onze bouwkundige zwembaden worden gebouwd volledig op uw maat."
         />
-        <meta property="og:title" content="Contacteer ons!" />
+
+        <meta
+          property="og:title"
+          content="Bouwkundige zwembaden bij AB Solutions."
+        />
         <meta
           property="og:description"
-          content="Heb je vragen over één van onze diensten? Stuur ons gerust een mailtje via onderstaand formulier. We zijn ook telefonisch bereikbaar op +32 479 65 96 39."
+          content="Onze bouwkundige zwembaden worden gebouwd volledig op uw maat."
         />
         <meta property="og:url" content="https://www.absolutesolutions.be/" />
         <meta property="og:type" content="website" />
