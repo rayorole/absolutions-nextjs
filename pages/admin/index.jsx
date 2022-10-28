@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useRef } from 'react';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../_firebase';

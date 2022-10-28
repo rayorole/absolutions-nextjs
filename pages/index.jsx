@@ -36,11 +36,32 @@ function Home() {
           content="AB Solutions bouwt en onderhoudt uw zwembad met de grootste zorg. U hoeft enkel te genieten."
         />
         <meta property="og:url" content="https://www.absolutesolutions.be/" />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/rayorole/absolutions-nextjs/dev/public/assets/images/absolutions.png"
+        />
+        <meta property="og:site_name" content="AB Solutions zwembaden" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, archive" />
         <meta
           name="google-site-verification"
           content="9ZktPPedo01mWXN8XvjIGf9u5x2KdzxyUr8BTvgI80I"
+        />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@rayorole" />
+        <meta name="twitter:title" content="AB Solutions zwembaden" />
+        <meta
+          name="twitter:url"
+          content="https://absolutions-nextjs.vercel.app/"
+        />
+        <meta
+          name="twitter:description"
+          content="AB Solutions bouwt en onderhoudt uw zwembad met de grootste zorg. U hoeft enkel te genieten."
+        />
+        <meta
+          name="twitter:image"
+          content="https://raw.githubusercontent.com/rayorole/absolutions-nextjs/dev/public/assets/images/absolutions.png"
         />
       </Head>
       <div className="">
