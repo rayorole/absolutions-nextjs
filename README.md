@@ -2,7 +2,7 @@ Absolutions is bootstrapped with [`create-next-app`](https://github.com/vercel/n
 
 ![alt text](/public/assets/images/absolutions.png)
 ![Vercel](https://vercelbadge.vercel.app/api/rayorole/absolutions-nextjs)
-![License]('https://img.shields.io/github/license/rayorole/absolutions-nextjs')
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Over AB Solutions
 
